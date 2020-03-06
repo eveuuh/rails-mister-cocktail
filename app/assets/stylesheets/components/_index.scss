@@ -1,4 +1,23 @@
 // Import your components CSS files here.
-@import "alert";
+@import "card";
 @import "avatar";
 @import "navbar";
+@import "footer";
+@import "banner";
+@import "alert";
+@import "cardgrid";
+@import "modal";
+
+.container {
+  max-width: 950vh;
+  min-height: 100vh;
+  background-color: #c5a765;
+}
+
+h1{
+  color:white;
+}
+
+a{
+  color: white;
+}
