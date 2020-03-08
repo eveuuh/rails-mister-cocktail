@@ -7,7 +7,7 @@
 @import "alert";
 @import "cardgrid";
 @import "modal";
-
+@import "button";
 .container {
   max-width: 950vh;
   min-height: 100vh;
@@ -16,8 +16,21 @@
 
 h1{
   color:white;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+
 }
 
 a{
   color: white;
+}
+
+li{
+  list-style-type: none;
+
+}
+h2 {
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+
 }

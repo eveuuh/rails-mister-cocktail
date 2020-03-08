@@ -1,11 +1,14 @@
+
 <h1>Cocktail's Island</h1>
+
+<%= link_to "Créez votre cocktail!", new_cocktail_path, class: "btn btn-ghost" %>
+
 
 <div class="cards">
 <% @cocktails.each do |cocktail| %>
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(cl_image_tag @cocktail.photo.key)">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path (cocktail.photo.key)%>')">
   <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
   </div>
 <% end %>
 </div>
 
- <%= link_to "Create your Cocktail", new_cocktail_path  %>

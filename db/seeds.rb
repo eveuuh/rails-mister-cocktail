@@ -8,22 +8,24 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Cocktails deleting"
-puts "Ingredients deleting"
-puts "Doses deleting"
 Cocktail.destroy_all
-Ingredient.destroy_all
-Dose.destroy_all
 puts "Cocktails deleted"
+
+puts "Ingredients deleting"
+Ingredient.destroy_all
 puts "Ingredients deleted"
+
+puts "Doses deleting"
+Dose.destroy_all
 puts "Doses deleted"
 
 
 puts "Ingredient creating"
-Ingredient.create(name: 'lemon')
-Ingredient.create(name: 'ice')
-Ingredient.create(name: 'mint leaves')
-Ingredient.create(name: 'ice cube')
-Ingredient.create(name: 'strawberry')
+Ingredient.create(name: 'Citron')
+Ingredient.create(name: 'Glaçon')
+Ingredient.create(name: 'Menthe')
+Ingredient.create(name: 'Eau gaseuze')
+Ingredient.create(name: 'Fraise')
 puts "Ingredient created"
 
 puts "Dose creating"

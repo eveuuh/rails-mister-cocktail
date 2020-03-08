@@ -1,8 +1,17 @@
+<h3>Ajoutez un ingrédient</h3>
+
+
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %>
- <%= f.association :ingredient %>
+ <%= f.association :ingredient,  input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
 
+<div>
+  <%= f.submit "Ajoutez une dose au cocktail", class: "btn btn-ghost" %>
+  <% end %>
 
-  <%= f.submit "add a dose to your cocktail", class: "btn btn-primary" %>
-<% end %>
- <%= link_to "retourner à l'accueil", cocktails_path  %>
+</div>
+<div>
+
+<%= link_to "retourner à l'accueil", cocktails_path , class: "btn btn-ghost" %>
+
+</div>
